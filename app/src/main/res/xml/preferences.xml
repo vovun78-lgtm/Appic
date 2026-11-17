@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ======================== ОСНОВНЫЕ ======================== -->
+    <PreferenceCategory
+        android:title="Основные"
+        android:key="category_general">
+
+        <Preference
+            android:key="edit_terms"
+            android:title="@string/rename_terms"
+            android:summary="@string/rename_terms_summary"
+            android:icon="@drawable/ic_menu_edit"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+    <!-- ======================== ВНЕШНИЙ ВИД ======================== -->
+    <PreferenceCategory
+        android:title="Внешний вид"
+        android:key="category_appearance">
+
+        <ListPreference
+            android:key="dark_mode"
+            android:title="Тема (Светлая/Тёмная)"
+            android:summary="%s"
+            android:entries="@array/dark_mode_entries"
+            android:entryValues="@array/dark_mode_values"
+            android:defaultValue="0"
+            android:persistent="true"
+            android:icon="@drawable/ic_menu_manage" />
+
+        <ListPreference
+            android:key="color_theme"
+            android:title="Цветовая схема"
+            android:summary="%s"
+            android:entries="@array/color_theme_entries"
+            android:entryValues="@array/color_theme_values"
+            android:defaultValue="default"
+            android:persistent="true"
+            android:icon="@drawable/ic_menu_gallery" />
+
+        <!-- НАСТРОЙКА ЗАСТАВКИ -->
+        <com.example.appic.preferences.SplashImagePreference
+            android:key="custom_splash"
+            android:title="Настройка заставки"
+            android:summary="Выбрать картинку при запуске"
+            android:persistent="false" />
+
+        <Preference
+            android:key="reset_splash"
+            android:title="Сбросить заставку"
+            android:summary="Вернуть стандартную заставку"
+            android:icon="@android:drawable/ic_menu_revert"
+            android:persistent="false" />
+
+        <!-- НАСТРОЙКА РАЗМЕРА ПРЕВЬЮ МЕДИА -->
+        <ListPreference
+            android:key="media_preview_size"
+            android:title="@string/media_preview_size_title"
+            android:summary="%s"
+            android:entries="@array/media_preview_size_entries"
+            android:entryValues="@array/media_preview_size_values"
+            android:defaultValue="100"
+            android:persistent="true"
+            android:icon="@drawable/ic_miniatur" />
+
+    </PreferenceCategory>
+
+    <!-- ======================== РАЗМЕРЫ ШРИФТОВ ======================== -->
+    <PreferenceCategory
+        android:title="Размеры шрифтов"
+        android:key="category_text_sizes">
+
+        <com.example.appic.preferences.TextSizeSeekBarPreference
+            android:key="text_size_title"
+            android:title="Размер заголовков"
+            android:summary="Размер шрифта заголовков"
+            android:defaultValue="18"
+            android:persistent="true"
+            app:minValue="10"
+            app:maxValue="36" />
+
+        <com.example.appic.preferences.TextSizeSeekBarPreference
+            android:key="text_size_body"
+            android:title="Размер шрифта описаний"
+            android:summary="Размер шрифта описаний"
+            android:defaultValue="14"
+            android:persistent="true"
+            app:minValue="8"
+            app:maxValue="30" />
+
+        <com.example.appic.preferences.TextSizeSeekBarPreference
+            android:key="text_size_input"
+            android:title="Размер шрифта в полях ввода"
+            android:summary="Размер шрифта содержимого в полях ввода"
+            android:defaultValue="16"
+            android:persistent="true"
+            app:minValue="10"
+            app:maxValue="32" />
+
+        <com.example.appic.preferences.TextSizeSeekBarPreference
+            android:key="toolbar_text_size"
+            android:title="Размер текста заголовка экрана"
+            android:summary="Размер шрифта в верхней панели"
+            android:defaultValue="20"
+            android:persistent="true"
+            app:minValue="12"
+            app:maxValue="32" />
+
+    </PreferenceCategory>
+
+    <!-- ======================== КАРТОЧКИ ======================== -->
+    <PreferenceCategory
+        android:title="Карточки"
+        android:key="category_cards">
+
+        <com.example.appic.preferences.SeekBarPreference
+            android:key="card_margin"
+            android:title="Внешние отступы карточек"
+            android:summary="Отступ вокруг карточки"
+            android:defaultValue="8"
+            android:persistent="true"
+            app:minValue="0"
+            app:maxValue="24" />
+
+        <com.example.appic.preferences.SeekBarPreference
+            android:key="card_padding"
+            android:title="Внутренние отступы карточек"
+            android:summary="Отступ содержимого от краёв карточки"
+            android:defaultValue="12"
+            android:persistent="true"
+            app:minValue="0"
+            app:maxValue="32" />
+
+        <com.example.appic.preferences.SeekBarPreference
+            android:key="card_corner_radius"
+            android:title="Радиус скругления карточек"
+            android:summary="Скругление углов"
+            android:defaultValue="8"
+            android:persistent="true"
+            app:minValue="0"
+            app:maxValue="24" />
+
+        <com.example.appic.preferences.SeekBarPreference
+            android:key="card_elevation"
+            android:title="Тень карточек"
+            android:summary="Высота тени под карточкой"
+            android:defaultValue="2"
+            android:persistent="true"
+            app:minValue="0"
+            app:maxValue="12" />
+
+    </PreferenceCategory>
+
+    <!-- ======================== СБРОС ======================== -->
+    <PreferenceCategory
+        android:title="Сброс"
+        android:key="category_reset">
+
+        <Preference
+            android:key="reset_defaults"
+            android:title="Сбросить настройки"
+            android:summary="Вернуть все настройки внешнего вида к значениям по умолчанию"
+            android:icon="@android:drawable/ic_menu_revert" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

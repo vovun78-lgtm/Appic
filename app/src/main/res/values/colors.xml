@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Базовые цвета -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="button_text_color">#FFFFFFFF</color>
+    <color name="button_text_color_disabled">#66FFFFFF</color>
+    <color name="purple_500">#2196F3</color>
+    <color name="purple_700">#1976D2</color>
+
+    <!-- Цвет фона заставки (в тон вашей теме) -->
+    <color name="splash_bg">#FFFFFF</color>
+
+    <!-- 1. Тема по умолчанию (Синий) -->
+    <color name="bg_default">#F5F5F5</color>
+    <color name="card_default">#FFFFFF</color>
+    <color name="group_default">#E0E0E0</color>
+    <color name="text_primary_default">#212121</color>
+    <color name="text_secondary_default">#757575</color>
+    <color name="divider_default">#E0E0E0</color>
+
+    <!-- 2. Апельсин -->
+    <color name="primary_orange">#FF9800</color>
+    <color name="primary_orange_dark">#F57C00</color>
+    <color name="secondary_orange">#FFC107</color>
+    <color name="bg_orange">#FFF8E1</color>
+    <color name="card_orange">#FFFFFF</color>
+    <color name="group_orange">#FFE0B2</color>
+    <color name="text_primary_orange">#3E2723</color>
+    <color name="text_secondary_orange">#795548</color>
+    <color name="divider_orange">#FFE0B2</color>
+
+    <!-- 3. Космос -->
+    <color name="primary_space">#3F51B5</color>
+    <color name="primary_space_dark">#1A237E</color>
+    <color name="secondary_space">#00BCD4</color>
+    <color name="bg_space">#E8EAF6</color>
+    <color name="card_space">#FFFFFF</color>
+    <color name="group_space">#C5CAE9</color>
+    <color name="text_primary_space">#1A237E</color>
+    <color name="text_secondary_space">#5C6BC0</color>
+    <color name="divider_space">#C5CAE9</color>
+
+    <!-- 4. Лето -->
+    <color name="primary_summer">#4CAF50</color>
+    <color name="primary_summer_dark">#388E3C</color>
+    <color name="secondary_summer">#8BC34A</color>
+    <color name="bg_summer">#F1F8E9</color>
+    <color name="card_summer">#FFFFFF</color>
+    <color name="group_summer">#C8E6C9</color>
+    <color name="text_primary_summer">#1B5E20</color>
+    <color name="text_secondary_summer">#558B2F</color>
+    <color name="divider_summer">#DCEDC8</color>
+
+    <!-- 5. Осень -->
+    <color name="primary_autumn">#D84315</color>
+    <color name="primary_autumn_dark">#BF360C</color>
+    <color name="secondary_autumn">#FFB300</color>
+    <color name="bg_autumn">#FFF3E0</color>
+    <color name="card_autumn">#FFFFFF</color>
+    <color name="group_autumn">#FFCCBC</color>
+    <color name="text_primary_autumn">#3E2723</color>
+    <color name="text_secondary_autumn">#6D4C41</color>
+    <color name="divider_autumn">#FFE0B2</color>
+
+    <!-- 6. Фестиваль -->
+    <color name="primary_festival">#E91E63</color>
+    <color name="primary_festival_dark">#C2185B</color>
+    <color name="secondary_festival">#FFEB3B</color>
+    <color name="bg_festival">#FCE4EC</color>
+    <color name="card_festival">#FFFFFF</color>
+    <color name="group_festival">#F8BBD0</color>
+    <color name="text_primary_festival">#880E4F</color>
+    <color name="text_secondary_festival">#AD1457</color>
+    <color name="divider_festival">#F8BBD0</color>
+</resources>

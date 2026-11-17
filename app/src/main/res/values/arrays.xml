@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ======================== РЕЖИМ ТЕМЫ ======================== -->
+    <string-array name="dark_mode_entries">
+        <item>Светлая</item>
+        <item>Тёмная</item>
+        <item>Системная</item>
+    </string-array>
+
+    <string-array name="dark_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- ======================== ЦВЕТОВЫЕ СХЕМЫ ======================== -->
+    <string-array name="color_theme_entries">
+        <item>По умолчанию (Синий)</item>
+        <item>Оранжевый</item>
+        <item>Тёмно-синий</item>
+        <item>Зелёный</item>
+        <item>Терракотовый</item>
+        <item>Яркий розовый</item>
+    </string-array>
+
+    <string-array name="color_theme_values">
+        <item>default</item>
+        <item>orange</item>
+        <item>space</item>
+        <item>summer</item>
+        <item>autumn</item>
+        <item>festival</item>
+    </string-array>
+
+    <!-- ======================== МЕДИА ======================== -->
+    <string-array name="media_preview_size_entries">
+        <item>Маленькие</item>
+        <item>Средние</item>
+        <item>Большие</item>
+    </string-array>
+
+    <string-array name="media_preview_size_values">
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+    </string-array>
+
+</resources>

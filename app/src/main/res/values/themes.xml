@@ -1,0 +1,193 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Базовая тема -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Единая тема диалогов для всего приложения (Шаг 1) -->
+        <item name="materialAlertDialogTheme">@style/Appic_MaterialAlertDialog</item>
+
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/bg_default</item>
+        <item name="android:windowBackground">@color/bg_default</item>
+        <item name="colorSurface">@color/card_default</item>
+        <item name="colorOnSurface">@color/text_primary_default</item>
+        <item name="colorOnBackground">@color/text_primary_default</item>
+
+        <item name="cardBackground">@color/card_default</item>
+        <item name="dividerColor">@color/divider_default</item>
+        <item name="textPrimaryColor">@color/text_primary_default</item>
+        <item name="textSecondaryColor">@color/text_secondary_default</item>
+        <item name="popupBackgroundColor">@color/card_default</item>
+        <item name="colorGroupBackground">@color/group_default</item>
+        <item name="inputTextColor">@color/text_primary_default</item>
+        <item name="fabColor">@color/purple_500</item>
+        <item name="unreadDotColor">#F44336</item>
+
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:textAppearanceListItem">@style/TextAppearance.MyApp.SettingsTitle</item>
+        <item name="android:colorControlActivated">@color/purple_500</item>
+        <item name="android:colorControlNormal">@color/purple_700</item>
+        <item name="android:colorAccent">@color/purple_500</item>
+        <item name="buttonStyle">@style/ButtonPrimary</item>
+        <item name="materialButtonStyle">@style/ButtonPrimary</item>
+    </style>
+
+    <!-- 2. Апельсин -->
+    <style name="AppTheme.Orange" parent="AppTheme">
+        <item name="colorPrimary">@color/primary_orange</item>
+        <item name="colorPrimaryVariant">@color/primary_orange_dark</item>
+        <item name="colorSecondary">@color/secondary_orange</item>
+        <item name="android:colorBackground">@color/bg_orange</item>
+        <item name="android:windowBackground">@color/bg_orange</item>
+        <item name="colorSurface">@color/card_orange</item>
+        <item name="colorOnSurface">@color/text_primary_orange</item>
+        <item name="colorOnBackground">@color/text_primary_orange</item>
+
+        <item name="cardBackground">@color/card_orange</item>
+        <item name="dividerColor">@color/divider_orange</item>
+        <item name="textPrimaryColor">@color/text_primary_orange</item>
+        <item name="textSecondaryColor">@color/text_secondary_orange</item>
+        <item name="popupBackgroundColor">@color/card_orange</item>
+        <item name="colorGroupBackground">@color/group_orange</item>
+        <item name="inputTextColor">@color/text_primary_orange</item>
+        <item name="fabColor">@color/primary_orange</item>
+
+        <item name="android:colorControlActivated">@color/primary_orange</item>
+        <item name="android:colorControlNormal">@color/primary_orange_dark</item>
+        <item name="android:colorAccent">@color/primary_orange</item>
+    </style>
+
+    <!-- 3. Космос -->
+    <style name="AppTheme.Space" parent="AppTheme">
+        <item name="colorPrimary">@color/primary_space</item>
+        <item name="colorPrimaryVariant">@color/primary_space_dark</item>
+        <item name="colorSecondary">@color/secondary_space</item>
+        <item name="android:colorBackground">@color/bg_space</item>
+        <item name="android:windowBackground">@color/bg_space</item>
+        <item name="colorSurface">@color/card_space</item>
+        <item name="colorOnSurface">@color/text_primary_space</item>
+        <item name="colorOnBackground">@color/text_primary_space</item>
+
+        <item name="cardBackground">@color/card_space</item>
+        <item name="dividerColor">@color/divider_space</item>
+        <item name="textPrimaryColor">@color/text_primary_space</item>
+        <item name="textSecondaryColor">@color/text_secondary_space</item>
+        <item name="popupBackgroundColor">@color/card_space</item>
+        <item name="colorGroupBackground">@color/group_space</item>
+        <item name="inputTextColor">@color/text_primary_space</item>
+        <item name="fabColor">@color/primary_space</item>
+
+        <item name="android:colorControlActivated">@color/primary_space</item>
+        <item name="android:colorControlNormal">@color/primary_space_dark</item>
+        <item name="android:colorAccent">@color/primary_space</item>
+    </style>
+
+    <!-- 4. Лето -->
+    <style name="AppTheme.Summer" parent="AppTheme">
+        <item name="colorPrimary">@color/primary_summer</item>
+        <item name="colorPrimaryVariant">@color/primary_summer_dark</item>
+        <item name="colorSecondary">@color/secondary_summer</item>
+        <item name="android:colorBackground">@color/bg_summer</item>
+        <item name="android:windowBackground">@color/bg_summer</item>
+        <item name="colorSurface">@color/card_summer</item>
+        <item name="colorOnSurface">@color/text_primary_summer</item>
+        <item name="colorOnBackground">@color/text_primary_summer</item>
+
+        <item name="cardBackground">@color/card_summer</item>
+        <item name="dividerColor">@color/divider_summer</item>
+        <item name="textPrimaryColor">@color/text_primary_summer</item>
+        <item name="textSecondaryColor">@color/text_secondary_summer</item>
+        <item name="popupBackgroundColor">@color/card_summer</item>
+        <item name="colorGroupBackground">@color/group_summer</item>
+        <item name="inputTextColor">@color/text_primary_summer</item>
+        <item name="fabColor">@color/primary_summer</item>
+
+        <item name="android:colorControlActivated">@color/primary_summer</item>
+        <item name="android:colorControlNormal">@color/primary_summer_dark</item>
+        <item name="android:colorAccent">@color/primary_summer</item>
+    </style>
+
+    <!-- 5. Осень -->
+    <style name="AppTheme.Autumn" parent="AppTheme">
+        <item name="colorPrimary">@color/primary_autumn</item>
+        <item name="colorPrimaryVariant">@color/primary_autumn_dark</item>
+        <item name="colorSecondary">@color/secondary_autumn</item>
+        <item name="android:colorBackground">@color/bg_autumn</item>
+        <item name="android:windowBackground">@color/bg_autumn</item>
+        <item name="colorSurface">@color/card_autumn</item>
+        <item name="colorOnSurface">@color/text_primary_autumn</item>
+        <item name="colorOnBackground">@color/text_primary_autumn</item>
+
+        <item name="cardBackground">@color/card_autumn</item>
+        <item name="dividerColor">@color/divider_autumn</item>
+        <item name="textPrimaryColor">@color/text_primary_autumn</item>
+        <item name="textSecondaryColor">@color/text_secondary_autumn</item>
+        <item name="popupBackgroundColor">@color/card_autumn</item>
+        <item name="colorGroupBackground">@color/group_autumn</item>
+        <item name="inputTextColor">@color/text_primary_autumn</item>
+        <item name="fabColor">@color/primary_autumn</item>
+
+        <item name="android:colorControlActivated">@color/primary_autumn</item>
+        <item name="android:colorControlNormal">@color/primary_autumn_dark</item>
+        <item name="android:colorAccent">@color/primary_autumn</item>
+    </style>
+
+    <!-- 6. Фестиваль -->
+    <style name="AppTheme.Festival" parent="AppTheme">
+        <item name="colorPrimary">@color/primary_festival</item>
+        <item name="colorPrimaryVariant">@color/primary_festival_dark</item>
+        <item name="colorSecondary">@color/secondary_festival</item>
+        <item name="android:colorBackground">@color/bg_festival</item>
+        <item name="android:windowBackground">@color/bg_festival</item>
+        <item name="colorSurface">@color/card_festival</item>
+        <item name="colorOnSurface">@color/text_primary_festival</item>
+        <item name="colorOnBackground">@color/text_primary_festival</item>
+
+        <item name="cardBackground">@color/card_festival</item>
+        <item name="dividerColor">@color/divider_festival</item>
+        <item name="textPrimaryColor">@color/text_primary_festival</item>
+        <item name="textSecondaryColor">@color/text_secondary_festival</item>
+        <item name="popupBackgroundColor">@color/card_festival</item>
+        <item name="colorGroupBackground">@color/group_festival</item>
+        <item name="inputTextColor">@color/text_primary_festival</item>
+        <item name="fabColor">@color/primary_festival</item>
+
+        <item name="android:colorControlActivated">@color/primary_festival</item>
+        <item name="android:colorControlNormal">@color/primary_festival_dark</item>
+        <item name="android:colorAccent">@color/primary_festival</item>
+    </style>
+
+    <!-- ============================================================
+         ЕДИНАЯ ТЕМА ДИАЛОГОВ (Шаг 1)
+         Применяется ко всем MaterialAlertDialogBuilder(context) через
+         AppTheme.materialAlertDialogTheme → @style/Appic_MaterialAlertDialog.
+         Автоматически наследует colorPrimary из активной цветовой схемы.
+         ============================================================ -->
+    <style name="Appic_MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Appic.Dialog</item>
+    </style>
+
+    <style name="ShapeAppearance.Appic.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColorPrimary">?attr/textPrimaryColor</item>
+        <item name="android:popupBackground">?attr/popupBackgroundColor</item>
+    </style>
+
+    <style name="PopupMenuDark" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">?attr/textPrimaryColor</item>
+        <item name="android:popupBackground">?attr/popupBackgroundColor</item>
+    </style>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="TextAppearance.MyApp.SettingsTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="Widget.Material3.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="ButtonOutlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="FabButton" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="android:layout_margin">16dp</item>
+        <item name="backgroundTint">?attr/fabColor</item>
+        <item name="tint">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="DragHandle">
+        <item name="android:alpha">0.6</item>
+        <item name="android:src">@drawable/ic_drag_handle</item>
+    </style>
+
+    <!-- Тема для экрана заставки -->
+    <style name="Theme.Appic.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Фон окна для Android до 12 -->
+        <item name="android:windowBackground">@color/splash_bg</item>
+        <item name="android:statusBarColor">@color/splash_bg</item>
+        <item name="android:navigationBarColor">@color/splash_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- ВОЗВРАЩАЕМ СИСТЕМНЫЕ БАРЫ -->
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Настройки для Android 12+ (скрываем системную иконку) -->
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/splash_bg</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@android:color/transparent</item>
+    </style>
+
+</resources>

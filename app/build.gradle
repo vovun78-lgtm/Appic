@@ -1,0 +1,122 @@
+import java.util.Properties
+
+plugins {
+    id 'com.android.application'
+}
+
+// ---------- Чтение версии ----------
+def versionFile = rootProject.file('version.properties')
+if (!versionFile.exists()) {
+    versionFile.text = "VERSION_NAME=0.5\nVERSION_CODE=1\n"
+}
+
+def versionProps = new Properties()
+versionFile.withInputStream { versionProps.load(it) }
+def currentVersionName = (versionProps.getProperty('VERSION_NAME') ?: '0.5').trim()
+def currentVersionCode = (versionProps.getProperty('VERSION_CODE') ?: '1').trim().toInteger()
+
+// ---------- Чтение данных для подписи ----------
+def localProps = new Properties()
+def localPropsFile = rootProject.file('local.properties')
+if (localPropsFile.exists()) {
+    localPropsFile.withInputStream { localProps.load(it) }
+}
+
+def resolveSigningProp = { String key ->
+    localProps.getProperty(key)
+            ?: System.getenv(key)
+            ?: (project.hasProperty(key) ? project.property(key) : null)
+}
+
+def releaseStoreFile = resolveSigningProp('RELEASE_STORE_FILE')
+def releaseStorePassword = resolveSigningProp('RELEASE_STORE_PASSWORD')
+def releaseKeyAlias = resolveSigningProp('RELEASE_KEY_ALIAS')
+def releaseKeyPassword = resolveSigningProp('RELEASE_KEY_PASSWORD')
+
+def hasReleaseSigning = releaseStoreFile && releaseStorePassword
+        && releaseKeyAlias && releaseKeyPassword
+
+android {
+    namespace 'com.example.appic'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "ru.vladimir.appic"
+        minSdk 29
+        targetSdk 34
+        versionCode currentVersionCode
+        versionName currentVersionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    signingConfigs {
+        release {
+            if (hasReleaseSigning) {
+                storeFile rootProject.file(releaseStoreFile)
+                storePassword releaseStorePassword
+                keyAlias releaseKeyAlias
+                keyPassword releaseKeyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            if (hasReleaseSigning) {
+                signingConfig signingConfigs.release
+            } else {
+                logger.lifecycle("⚠ RELEASE_STORE_FILE/PASSWORD/KEY_ALIAS/KEY_PASSWORD не заданы — release-сборка будет UNSIGNED. " +
+                        "Укажите их в local.properties, ~/.gradle/gradle.properties или переменных окружения.")
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def fileName = "Аппик-${currentVersionName}.apk"
+            outputFileName = fileName
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+
+    implementation 'androidx.fragment:fragment:1.6.2'
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.6.2'
+    implementation 'androidx.exifinterface:exifinterface:1.3.7'
+
+    // GSON для хранения динамических полей в JSON
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    def room_version = "2.6.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+}

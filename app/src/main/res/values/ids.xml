@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_paste" type="id" />
+    <item name="action_search" type="id" />
+    <item name="action_help" type="id" />
+    <item name="action_settings" type="id" />
+    <item name="tag_text_capitalizer_applied" type="id" />
+</resources>

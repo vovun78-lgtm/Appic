@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/PopupMenuDark" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <!-- ==================== ЗАГОЛОВОК ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Руководство пользователя"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="?attr/textPrimaryColor"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Полное описание всех возможностей приложения"
+                android:textSize="14sp"
+                android:textColor="?attr/textSecondaryColor"
+                android:layout_marginBottom="24dp" />
+
+            <!-- ==================== СЕКЦИЯ 1: О ПРИЛОЖЕНИИ ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. О приложении"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Это универсальный конструктор для учёта чего угодно. Приложение не привязано к конкретной сфере — вы сами задаёте, что будете учитывать:\n\n• Станки, автомобили, инструменты — для материального учёта.\n• Проекты, задачи, заявки — для работы и планирования.\n• Коллекции книг, фильмов, растений — для личных интересов.\n• Ремонты, прививки, визиты — для истории событий.\n\nВнутри каждого объекта вы ведёте записи с произвольным набором полей, прикрепляете фото, видео и документы. Все данные хранятся только на вашем устройстве — никакой интернет не нужен."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 2: ПЕРВЫЙ ЗАПУСК ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Первый запуск (приветствие)"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="При самом первом запуске приложение попросит вас ответить на 6 вопросов — это займёт не больше минуты. Ответы можно изменить позже в настройках через пункт «Переименовать термины».\n\nШаги:\n\n1. Название приложения — как оно будет отображаться в верхней панели. Например: «Мои авто», «Склад», «Мои проекты».\n\n2. Основной объект в единственном числе — что вы будете учитывать. Например: «Станок», «Автомобиль», «Проект».\n\n3. Основной объект во множественном числе. Например: «Станки», «Автомобили», «Проекты».\n\n4. Элемент внутри в единственном числе — что именно записываете о каждом объекте. Например: «Ремонт», «Запись», «Задача».\n\n5. Элемент внутри во множественном числе. Например: «Ремонты», «Записи», «Задачи».\n\n6. Настройка полей — выбор типов для «Заголовка» и «Содержимого», плюс добавление до 10 дополнительных полей. Подробнее — в разделе 6 «Типы полей»."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Скриншот-заглушка -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: экран приветствия, шаг 1 из 6]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 3: ГЛАВНЫЙ ЭКРАН ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Главный экран"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Главный экран — это список всех ваших объектов и групп объектов.\n\nЧто можно делать:\n\n• Нажать на объект — откроется список его записей.\n• Нажать на группу (папку) — откроется список объектов внутри.\n• Долгое нажатие на карточку — открыть меню действий: «Редактировать», «Удалить», «Поделиться», «Сохранить» (экспорт в файл), «Переместить в группу» (только для объектов).\n• Потянуть за ручку слева от карточки — изменить порядок вручную.\n• Перетащить объект на группу — переместить его в эту группу.\n• Красная точка на карточке — есть непрочитанные записи внутри.\n\nКнопки внизу экрана:\n\n• 📁 (слева) — создать новую группу объектов.\n• ➕ (справа) — добавить новый объект."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: главный экран со списком объектов и групп]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 4: ГРУППЫ ОБЪЕКТОВ ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Группы объектов"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Группы помогают разложить объекты по категориям. Например: «Гараж», «Офис», «Склад».\n\nВнутри группы:\n\n• Кнопка ➕ (справа) — добавить новый объект сразу в эту группу.\n• Меню (три точки в тулбаре) — переименовать или удалить группу.\n• Долгое нажатие на объект — редактировать, удалить, переместить в другую группу.\n• Потянуть за ручку слева — изменить порядок объектов внутри группы.\n\nВажно: при удалении группы объекты внутри неё не удаляются — они просто становятся «без группы» и появляются в общем списке главного экрана."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: экран группы объектов]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 5: ЭКРАН ОБЪЕКТА ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5. Экран объекта (записи)"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Здесь вы ведёте историю по выбранному объекту. Экран состоит из карточек-записей и карточек-групп записей.\n\nЧто можно делать:\n\n• Нажать на запись — открыть её для просмотра/редактирования.\n• Нажать на группу — открыть список записей внутри.\n• Долгое нажатие на запись — «Редактировать», «Удалить», «Поделиться», «Сохранить» (экспорт одной записи в файл).\n• Долгое нажатие на группу — «Редактировать», «Удалить», «Поделиться», «Сохранить».\n• Потянуть за ручку слева — изменить порядок.\n• Перетащить запись на группу — переместить в эту группу.\n\nКнопки внизу:\n\n• 📁 (слева) — создать новую группу записей.\n• ➕ (справа) — добавить новую запись.\n\nВ карточке записи могут отображаться:\n\n• Заголовок (то, что задали в приветствии).\n• Текст содержимого (если введён).\n• Превью до 2-х дополнительных полей (например, «Рейтинг: ★★★★☆» или «Статус: В работе»).\n• Красная точка — запись непрочитана."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: экран записей объекта со списком]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 6: СОЗДАНИЕ ЗАПИСИ ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6. Создание и редактирование записи"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="На экране записи вы заполняете поля и прикрепляете файлы.\n\nСтандартные поля (задаются в приветствии):\n\n• Заголовок — краткое название записи.\n• Содержимое — описание.\n\nДополнительные поля (до 10) — задаются в приветствии и настраиваются индивидуально для каждого типа. Подробнее — в разделе 7 «Типы полей».\n\nМедиафайлы:\n\n• Кнопка ➕ под меткой «Фото и видео» открывает выбор источника: «Сделать фото», «Записать видео», «Выбрать фото/видео», «Выбрать документ».\n• Крестик на миниатюре — удалить файл.\n• Нажатие на фото/видео — открыть на весь экран.\n\nСохранение: кнопка «Сохранить» внизу экрана. При сохранении проверяются обязательные поля — если что-то не заполнено, появится подсказка."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: экран создания записи с полями и медиа]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 7: ТИПЫ ПОЛЕЙ ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7. Типы полей"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Приложение поддерживает 12 типов полей. Каждый тип меняет способ ввода и отображения. Доступны как для основных полей (Заголовок, Содержимое), так и для дополнительных.\n\n📝 Текст — обычная строка.\n\n🔢 Число — только цифры, поддерживает дробную часть.\n\n📅 Дата — выбор из календаря, формат «дд.мм.гггг».\n\n🕐 Дата и время — выбор даты и времени, формат «дд.мм.гггг чч:мм».\n\n☑️ Флажок (Да/Нет) — галочка вкл/выкл.\n\n📋 Выбор из списка — выпадающий список, можно выбрать только один вариант. Например, «Статус: Новый / В работе / Готово».\n\n✅ Множественный выбор — галочки, можно выбрать несколько вариантов. Например, «Теги: Важное, Срочное, Личное».\n\n🔗 Ссылка (URL) — специальная клавиатура для ввода интернет-адресов.\n\n📧 Email — клавиатура с @ и точкой.\n\n📞 Телефон — цифровая клавиатура.\n\n⭐ Рейтинг — звёзды от 1 до 5.\n\n📊 Прогресс — ползунок от 0 до 100%.\n\nДля полей типов «Выбор из списка» и «Множественный выбор» при настройке нужно ввести варианты через запятую.\n\nАвтозаполнение: для полей «Дата» и «Дата и время» можно включить чекбокс «Предзаполнять текущей датой/временем». Тогда при создании новой записи поле сразу заполнится текущим значением (его можно изменить). При редактировании существующей записи автозаполнение не срабатывает — сохраняется то, что было введено ранее."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: настройка дополнительных полей в приветствии]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 8: МЕДИА ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8. Работа с фото, видео и документами"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="К каждой записи можно прикрепить неограниченное количество файлов.\n\nФото и видео:\n\n• Отображаются в виде сетки миниатюр под полями.\n• Нажатие — открыть галерею на весь экран.\n• В галерее: свайп влево/вправо для перехода между файлами, счётчик «X / Y» сверху.\n• Фото: можно увеличивать двумя пальцами, двойной тап — зум.\n• Долгое нажатие на фото — меню «Копировать фото в выбранную папку».\n• Видео: контролы play/pause, ±10 секунд, ползунок перемотки, громкость, скорость от 0.5x до 2x.\n• Контролы видео автоматически скрываются через 3 секунды бездействия.\n\nДокументы:\n\n• Отображаются списком под медиа-сеткой.\n• Поддерживаются PDF, DOC, DOCX, TXT и другие форматы.\n• Нажатие — открыть в приложении, которое может просматривать этот тип файла.\n• Крестик справа — удалить документ.\n\nВажно: при удалении записи все прикреплённые к ней файлы тоже удаляются с устройства."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: галерея с фото и видео на весь экран]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: просмотр видео с контролами]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 9: ПОИСК ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9. Поиск"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Иконка лупы в верхней панели на любом экране открывает глобальный поиск.\n\nЧто ищется:\n\n• Объекты — по названию.\n• Группы объектов и групп записей — по названию.\n• Записи — по заголовку, содержимому и значениям дополнительных полей (включая варианты из списков).\n\nКак работает:\n\n• Поиск запускается автоматически через 0.3 секунды после ввода — не нужно нажимать «Найти».\n• Результаты отображаются списком с типом, заголовком и подсказкой (в какой группе/объекте находится).\n• Нажатие на результат — переход к этому объекту, группе или записи.\n• Поиск не учитывает регистр букв."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: экран поиска с результатами]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 10: ЭКСПОРТ/ИМПОРТ ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10. Экспорт и импорт данных"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Экспорт и импорт доступны через меню (три точки) на главном экране.\n\nЭкспорт:\n\n• «Экспорт» — сохранить полный архив всех данных в .zip-файл.\n• «Экспорт по дате» — выбрать период, будут сохранены только записи за этот период.\n\nЭкспорт отдельных частей (через long-press на карточке):\n\n• «Сохранить» на объекте — архив только этого объекта с его записями и файлами.\n• «Сохранить» на группе объектов — архив группы.\n• «Сохранить» на группе записей — архив группы записей.\n• «Сохранить» на записи — архив одной записи.\n\nПоделиться (share):\n\n• «Поделиться» на любой карточке — отправить архив через мессенджер, почту или любое другое приложение.\n\nИмпорт:\n\n• «Импорт» — выбрать .zip-файл, созданный этим приложением.\n• Импорт работает в режиме объединения: объекты и группы с совпадающими именами объединяются с существующими, новые — добавляются.\n• Дополнительные поля внутри записей сохраняют связь с их шаблонами — данные не теряются."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: меню экспорта/импорта]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 11: НАСТРОЙКИ ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="11. Настройки"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Открываются через меню (три точки) → «Настройки». Разделы:\n\n📌 Основные:\n\n• «Переименовать термины» — изменить названия (приложение, объекты, записи) и типы полей. Откроется тот же экран, что и при первом запуске, но с уже заполненными значениями.\n\n🎨 Внешний вид:\n\n• Тема — Светлая, Тёмная или Системная (как на телефоне).\n• Цветовая схема — 6 вариантов: По умолчанию, Оранжевая, Космос, Лето, Осень, Праздничная. Меняет основной цвет приложения.\n• Настройка заставки — выбрать картинку из галереи, которая будет показываться при запуске. Слева отображается миниатюра текущей заставки.\n• Сбросить заставку — вернуть стандартную иконку приложения.\n\n📏 Размеры шрифтов:\n\n• Размер заголовков — для заголовков карточек и полей.\n• Размер описаний — для текста описаний.\n• Размер шрифта в полях ввода.\n• Размер текста заголовка экрана (в тулбаре).\n\n🗂 Карточки:\n\n• Внешние отступы — расстояние вокруг карточки.\n• Внутренние отступы — расстояние от содержимого до краёв.\n• Радиус скругления углов.\n• Высота тени.\n\n♻️ Сброс:\n\n• «Сбросить настройки» — вернуть все параметры внешнего вида к значениям по умолчанию."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_help_placeholder"
+                        android:gravity="center"
+                        android:text="📷 [Скриншот: экран настроек]"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== СЕКЦИЯ 12: СОВЕТЫ ==================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12. Полезные советы"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="💡 Регулярно делайте экспорт — это ваша резервная копия. Если смените телефон, просто импортируйте архив в новое приложение.\n\n💡 Используйте группы для порядка. Если объектов станет много — разбейте их по категориям (например, по локациям или типам).\n\n💡 Дополнительные поля — это не только «Ремонты». С их помощью можно вести учёт расходников, сроков, рейтингов и чего угодно ещё.\n\n💡 Красная точка на карточке — напоминание, что там есть непрочитанная запись. Открытие записи автоматически снимает отметку.\n\n💡 Меняйте размеры шрифтов и отступы карточек под себя — приложение подстраивается под ваш экран и зрение.\n\n💡 Заставка настраивается один раз — и приложение будет открываться с вашей любимой картинкой.\n\n💡 Приложение не требует интернета. Все данные хранятся на устройстве, никто кроме вас к ним не имеет доступа."
+                        android:textSize="14sp"
+                        android:textColor="?attr/textSecondaryColor"
+                        android:lineSpacingExtra="4dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================== ФУТЕР ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Если что-то осталось непонятным — попробуйте пройти по экранам ещё раз. Все функции интуитивны: долгое нажатие на любой карточке открывает меню действий, а кнопки внизу экрана всегда добавляют новое."
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:textColor="?attr/textSecondaryColor"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

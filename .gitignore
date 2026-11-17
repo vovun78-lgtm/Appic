@@ -1,0 +1,40 @@
+# Собранное приложение
+*.apk
+*.ap_
+*.aab
+*.dex
+
+# Классы Java
+*.class
+
+# Папки сборки
+build/
+bin/
+gen/
+out/
+captures/
+
+# Gradle
+.gradle/
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+.navigation/
+
+# Keystore (ключи подписи — НЕ коммитить!)
+*.jks
+*.keystore
+
+# Внешние сборки
+.externalNativeBuild/
+.cxx/
+
+# OS файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log файлы
+*.log

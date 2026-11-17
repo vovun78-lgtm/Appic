@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_statistics"
+        android:title="@string/stats_title"
+        android:orderInCategory="5"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_export"
+        android:title="@string/export"
+        android:orderInCategory="10"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_export_date_range"
+        android:title="@string/export_date_range"
+        android:orderInCategory="11"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_import_data"
+        android:title="@string/import_title"
+        android:orderInCategory="12"
+        app:showAsAction="never" />
+</menu>

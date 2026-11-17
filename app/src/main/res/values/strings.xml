@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ======================== ОБЩИЕ ======================== -->
+    <string name="app_name">Аппик</string>
+    <string name="title">Запись</string>
+    <string name="content">Содержимое</string>
+
+    <string name="title_add_field">Новая запись</string>
+    <string name="title_edit_field">Редактировать запись</string>
+    <string name="title_add_machine">Добавить</string>
+    <string name="title_edit_machine">Редактировать</string>
+    <string name="title_settings">Настройки</string>
+
+    <!-- Пункты меню -->
+    <string name="action_help_title">Помощь</string>
+    <string name="action_settings_title">Настройки</string>
+
+    <!-- ======================== ОБЩИЕ КНОПКИ / ДЕЙСТВИЯ ======================== -->
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ok">OK</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="add">Добавить</string>
+    <string name="edit">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="share">Поделиться</string>
+    <string name="create">Создать</string>
+    <string name="rename">Переименовать</string>
+    <string name="export">Экспорт</string>
+    <string name="export_date_range">Экспорт по дате</string>
+    <string name="import_title">Импорт данных</string>
+    <string name="import_data">Импорт данных</string>
+    <string name="settings">Настройки</string>
+    <string name="create_group">Создать группу</string>
+    <string name="create_machine_group">Создать группу объектов</string>
+    <string name="ungrouped_machines">Без группы</string>
+    <string name="action_move_to_group">Переместить в группу</string>
+
+    <!-- ======================== ГЛАВНЫЙ ЭКРАН ======================== -->
+    <string name="exporting">Экспорт данных...</string>
+    <string name="delete_confirm">Подтверждение удаления</string>
+
+    <!-- ======================== ГЛОБАЛЬНЫЙ ПОИСК ======================== -->
+    <string name="global_search">Глобальный поиск</string>
+    <string name="search_hint">Введите запрос для поиска…</string>
+    <string name="no_results">Ничего не найдено</string>
+
+    <!-- ======================== ДОБАВЛЕНИЕ / РЕДАКТИРОВАНИЕ ======================== -->
+    <string name="hint_title">Заголовок</string>
+    <string name="hint_text">Описание</string>
+    <string name="enter_title">Введите заголовок</string>
+    <string name="processing_media">Обработка медиа…</string>
+    <string name="error_copy_photo">Не удалось скопировать файл</string>
+    <string name="error_camera">Ошибка камеры</string>
+    <string name="label_media">Медиа</string>
+    <string name="label_documents">Документы</string>
+    <string name="hint_machine_name">Название объекта</string>
+    <string name="enter_machine_name">Введите название объекта</string>
+
+    <!-- ======================== МЕДИА ======================== -->
+    <string name="add_media">Добавить медиа</string>
+    <string name="take_photo">Сделать фото</string>
+    <string name="record_video">Записать видео</string>
+    <string name="pick_photo_video">Выбрать фото/видео из галереи</string>
+    <string name="choose_document">Выбрать документ</string>
+    <string name="gallery_counter">%1$d / %2$d</string>
+    <string name="media_photo_added">Фото добавлено</string>
+    <string name="media_video_added">Видео добавлено</string>
+    <string name="media_file_not_found">Файл не найден</string>
+    <string name="media_open_failed">Не удалось открыть документ</string>
+    <string name="media_delete_confirm">Удалить этот файл?</string>
+    <string name="media_source_dialog_title">Добавить медиа</string>
+    <string name="error_camera_permission">Разрешение на камеру не получено</string>
+    <string name="error_camera_unavailable">Разрешение на камеру недоступно</string>
+    <string name="error_photo_not_received">Фото не получено от камеры</string>
+    <string name="error_video_not_received">Видео не получено от камеры</string>
+
+    <!-- ======================== НАСТРОЙКИ ======================== -->
+    <string name="rename_terms">Изменить названия элементов</string>
+    <string name="rename_terms_summary">Настроить слова, используемые в интерфейсе (например, Станок, Автомобиль)</string>
+    <string name="media_preview_size_title">Размер превью медиа</string>
+
+    <!-- ======================== ПРОГРЕСС / СТАТУСЫ ======================== -->
+    <string name="progress_saving">Сохранение...</string>
+    <string name="progress_importing">Импорт...</string>
+    <string name="progress_importing_percent">Импорт: %1$d%%</string>
+    <string name="progress_exporting">Экспорт...</string>
+    <string name="progress_exporting_group">Экспорт группы...</string>
+    <string name="progress_exporting_field">Экспорт записи...</string>
+    <string name="progress_preparing_archive">Подготовка архива...</string>
+    <string name="progress_exporting_data">Экспорт данных...</string>
+    <string name="progress_processing_media">Обработка медиа…</string>
+
+    <string name="status_export_success">Экспорт завершён</string>
+    <string name="status_export_error">Ошибка экспорта</string>
+    <string name="status_archive_error">Ошибка создания архива</string>
+    <string name="status_import_success">Импорт завершён. Данные обновлены.</string>
+    <string name="status_import_error">Ошибка импорта: неверный файл или повреждённый архив</string>
+    <string name="status_operation_in_progress">Операция уже выполняется, подождите...</string>
+    <string name="status_operation_in_progress_short">Операция уже выполняется</string>
+    <string name="status_wait_media_processing">Дождитесь окончания обработки медиа</string>
+
+    <!-- ======================== АРХИВЫ ======================== -->
+    <string name="archive_default_name">App_Backup.zip</string>
+    <string name="archive_name_dialog_title">Имя архива</string>
+    <string name="archive_name_for_save_title">Имя архива для сохранения</string>
+    <string name="archive_name_for_share_title">Имя архива для отправки</string>
+    <string name="archive_export_btn">Экспортировать</string>
+    <string name="archive_save_btn">Сохранить</string>
+    <string name="archive_share_btn">Отправить</string>
+    <string name="archive_send_chooser_title">Отправить архив</string>
+    <string name="archive_export_completed">Экспорт завершён</string>
+    <string name="archive_export_error">Ошибка экспорта</string>
+    <string name="archive_default_name_date">appic_Backup_%1$d.zip</string>
+
+    <!-- ======================== ГРУППЫ / ОБЪЕКТЫ ======================== -->
+    <string name="dialog_action_group_title">Действие с группой</string>
+    <string name="dialog_action_group_machines_title">Действие с группой объектов</string>
+    <string name="dialog_action_machine_title">Действие с объектом</string>
+    <string name="dialog_action_field_title">Действие с полем</string>
+    <string name="dialog_move_to_group_title">Перемещение в группу</string>
+    <string name="dialog_move_machine_to_group_message">Переместить объект \'%1$s\' в группу \'%2$s\'?</string>
+    <string name="dialog_move_field_to_group_message">Переместить запись \'%1$s\' в группу \'%2$s\'?</string>
+    <string name="dialog_move_machine_title">Переместить станок</string>
+    <string name="dialog_move_no_groups">Нет ни одной группы</string>
+    <string name="dialog_delete_group_message">Удалить группу \'%1$s\'? Все объекты из неё станут «без группы».</string>
+    <string name="dialog_delete_field_message">Удалить поле \'%1$s\'? Все медиафайлы будут удалены.</string>
+    <string name="dialog_delete_machine_message">Удалить объект \'%1$s\'? Все связанные записи и медиа также будут удалены.</string>
+    <string name="dialog_new_group_title">Новая группа</string>
+    <string name="dialog_edit_group_title">Редактировать группу</string>
+    <string name="dialog_rename_group_title">Переименовать группу</string>
+    <string name="dialog_group_name_empty">Название не может быть пустым</string>
+    <string name="dialog_enter_name">Введите название</string>
+    <string name="error_machine_not_specified">Ошибка: не указан объект</string>
+    <string name="error_machine_or_group_not_specified">Ошибка: не указан станок или группа</string>
+    <string name="error_group_not_found">Ошибка: группа не найдена</string>
+    <string name="type_group">Группа</string>
+
+    <!-- ======================== ИМПОРТ ======================== -->
+    <string name="dialog_import_title">Импорт данных</string>
+    <string name="dialog_import_message">При импорте объекты и группы с совпадающими именами будут объединены с уже существующими.\n\nПродолжить?</string>
+    <string name="dialog_import_continue">Продолжить</string>
+
+    <!-- ======================== ПОМОЩЬ ======================== -->
+    <string name="help_title">Помощь</string>
+
+    <!-- ======================== НАСТРОЙКИ (фрагмент) ======================== -->
+    <string name="splash_saving">Сохранение заставки...</string>
+    <string name="splash_saved">Заставка успешно изменена!</string>
+    <string name="splash_save_error">Ошибка сохранения заставки</string>
+    <string name="splash_reset">Заставка сброшена</string>
+    <string name="splash_default_active">Стандартная заставка уже активна</string>
+    <string name="settings_reset_done">Настройки сброшены</string>
+    <string name="dark_mode_light">Светлая</string>
+    <string name="dark_mode_dark">Тёмная</string>
+    <string name="dark_mode_system">Системная</string>
+    <string name="dark_mode_unknown">Неизвестно</string>
+    <string name="color_theme_default_summary">По умолчанию</string>
+
+    <!-- ======================== ОНБОРДИНГ ======================== -->
+    <string name="onboarding_saved">Настройки сохранены!</string>
+    <string name="onboarding_save_error">Ошибка сохранения настроек: %1$s</string>
+    <string name="onboarding_templates_load_error">Не удалось загрузить шаблоны полей</string>
+    <string name="onboarding_max_fields">Максимум 10 полей</string>
+    <string name="onboarding_enter_field_name">Введите название поля</string>
+    <string name="onboarding_data_check_error">Ошибка проверки данных</string>
+    <string name="onboarding_data_clear_error">Ошибка при удалении данных</string>
+    <string name="onboarding_type_change_title">Внимание!</string>
+    <string name="onboarding_type_change_message">В поле \'%1$s\' уже есть сохраненные данные. При смене типа старые значения будут УДАЛЕНЫ. Вы уверены?</string>
+    <string name="onboarding_type_change_confirm">Да, изменить</string>
+    <string name="onboarding_clear_old_error">Ошибка удаления старых данных</string>
+    <string name="onboarding_system_change_base">При смене типа основных полей старые значения могут быть удалены:</string>
+    <string name="onboarding_system_change_field">• В поле \"%1$s\" уже есть данные.</string>
+    <string name="onboarding_system_change_content">• В поле \"Содержимое\" уже есть данные.</string>
+    <string name="onboarding_system_change_confirm">Продолжить и удалить эти данные?</string>
+
+    <!-- ======================== ЭКСПОРТ ПО ДАТЕ ======================== -->
+    <string name="export_date_title">Экспорт по дате</string>
+    <string name="export_date_pick">Выбрать даты</string>
+    <string name="export_date_not_selected">Даты не выбраны</string>
+    <string name="export_date_range_title">Выберите период</string>
+    <string name="export_date_single">Дата: %1$s</string>
+    <string name="export_date_period">Период: %1$s — %2$s</string>
+    <string name="export_date_not_chosen_toast">Выберите период</string>
+    <string name="export_date_save_archive">Сохранить архив</string>
+    <string name="export_date_send_archive">Отправить архив</string>
+
+    <!-- ======================== ДИАЛОГ ТИПОВ / ШАБЛОНОВ ======================== -->
+    <string name="dialog_new_template_title">Новое поле</string>
+    <string name="dialog_edit_template_title">Редактировать поле</string>
+    <string name="dialog_field_name_hint">Название поля</string>
+    <string name="dialog_field_type_hint">Тип данных</string>
+    <string name="dialog_field_options_hint">Варианты через запятую (для Списка)</string>
+    <string name="dialog_autofill_label">Предзаполнять текущей датой/временем</string>
+    <string name="dialog_required_label">Обязательное поле</string>
+    <string name="dialog_add_btn">Добавить</string>
+
+    <!-- ======================== ДИНАМИЧЕСКИЕ ПОЛЯ ======================== -->
+    <string name="dynamic_progress_label_prefix">Прогресс: %1$d%%</string>
+    <string name="dynamic_rating_label_prefix">Рейтинг: %1$s</string>
+    <string name="dynamic_multiselect_empty">Ничего не выбрано</string>
+
+    <!-- ======================== ТИПЫ ПОЛЕЙ (UI) ======================== -->
+    <string name="type_text">Текст</string>
+    <string name="type_number">Число</string>
+    <string name="type_date">Дата</string>
+    <string name="type_datetime">Дата и время</string>
+    <string name="type_checkbox">Флажок (Да/Нет)</string>
+    <string name="type_dropdown">Выбор из списка</string>
+    <string name="type_multiselect">Множественный выбор</string>
+    <string name="type_url">Ссылка (URL)</string>
+    <string name="type_email">Email</string>
+    <string name="type_phone">Телефон</string>
+    <string name="type_rating">Рейтинг</string>
+    <string name="type_progress">Прогресс</string>
+
+    <!-- ======================== ВАЛИДАЦИЯ ======================== -->
+    <string name="validation_fill_required">Заполните обязательное поле: %1$s</string>
+    <string name="validation_fill_title">Заполните поле: %1$s</string>
+    <string name="validation_set_rating">Укажите рейтинг в обязательном поле: %1$s</string>
+    <string name="validation_set_progress">Установите прогресс в обязательном поле: %1$s</string>
+    <string name="validation_check_box">Поставьте галочку в обязательном поле: %1$s</string>
+
+    <!-- ======================== СТАТИСТИКА ======================== -->
+    <string name="stats_title">Статистика</string>
+    <string name="stats_section_builtin">Быстрые отчёты</string>
+    <string name="stats_section_my">Мои отчёты</string>
+    <string name="stats_no_builtin">Нет доступных отчётов</string>
+    <string name="stats_no_saved">Пока нет сохранённых отчётов</string>
+    <string name="stats_no_groups">Нет групп объектов</string>
+    <string name="stats_no_machines">Нет объектов</string>
+    <string name="stats_pick_group">Выберите группу</string>
+    <string name="stats_pick_machine">Выберите объект</string>
+    <string name="stats_pick_range">Выбрать период</string>
+    <string name="stats_empty_result">Нет данных для отображения</string>
+    <string name="stats_refresh">Обновить</string>
+    <string name="stats_open">Открыть</string>
+    <string name="stats_edit">Редактировать</string>
+    <string name="stats_duplicate">Дублировать</string>
+    <string name="stats_create">Создать отчёт</string>
+
+    <!-- ======================== КОНСТРУКТОР ======================== -->
+    <string name="builder_title">Новый отчёт</string>
+    <string name="builder_step_scope">Что анализировать?</string>
+    <string name="builder_scope_all">Все объекты</string>
+    <string name="builder_scope_group">Группа объектов</string>
+    <string name="builder_scope_machine">Один объект</string>
+    <string name="builder_step_period">Период</string>
+    <string name="builder_period_all">За всё время</string>
+    <string name="builder_period_this_month">Этот месяц</string>
+    <string name="builder_period_this_year">Этот год</string>
+    <string name="builder_period_last_30">Последние 30 дней</string>
+    <string name="builder_period_custom">Свой диапазон…</string>
+    <string name="builder_step_filters">Условия</string>
+    <string name="builder_add_filter">+ Добавить условие</string>
+    <string name="builder_step_group">Группировать по</string>
+    <string name="builder_step_metrics">Показать</string>
+    <string name="builder_add_metric">+ Добавить метрику</string>
+    <string name="builder_step_view">Вид отчёта</string>
+    <string name="builder_view_table">Таблица</string>
+    <string name="builder_view_bar">Столбцы</string>
+    <string name="builder_view_pie">Круговая</string>
+    <string name="builder_view_line">Линия</string>
+    <string name="builder_preview">Предпросмотр</string>
+    <string name="builder_pick_field">Выберите поле</string>
+    <string name="builder_pick_op">Выберите оператор</string>
+    <string name="builder_pick_metric">Тип метрики</string>
+    <string name="builder_no_numeric_fields">Нет числовых полей для метрики</string>
+    <string name="builder_report_name">Название отчёта</string>
+    <string name="builder_save_title">Сохранить отчёт</string>
+    <string name="builder_saved">Отчёт сохранён</string>
+    <string name="builder_save_failed">Не удалось сохранить отчёт</string>
+    <string name="builder_back">Назад</string>
+    <string name="builder_next">Далее</string>
+    <string name="builder_save">Сохранить отчёт</string>
+
+    <string name="share_post_title">Создать пост</string>
+    <string name="share_post_preview">Предпросмотр</string>
+    <string name="share_post_field_title">Заголовок</string>
+    <string name="share_post_field_text">Текст</string>
+    <string name="share_post_field_hashtags">Хэштеги и упоминания</string>
+    <string name="share_post_field_photo">Фото</string>
+    <string name="share_post_field_template">Шаблон</string>
+    <string name="share_post_field_format">Формат</string>
+    <string name="share_post_field_accent">Цвет акцента</string>
+    <string name="share_post_field_text_position">Позиция текста</string>
+    <string name="share_post_field_photo_layout">Раскладка фото</string>
+    <string name="share_post_field_watermark">Показывать водяной знак</string>
+    <string name="share_post_btn_share">Поделиться</string>
+    <string name="share_post_btn_save">Сохранить</string>
+    <string name="share_post_btn_crop">Настроить кадрирование</string>
+    <string name="share_post_btn_placements">Разместить фото вручную</string>
+    <string name="share_post_no_photo">Без фото</string>
+    <string name="share_post_no_photos_in_record">В записи нет фото</string>
+    <string name="share_post_photo_count">Фото в посте: %1$d из %2$d</string>
+    <string name="share_post_placements_title">Размещение фото</string>
+    <string name="share_post_placements_hint">Задайте позицию, размер и масштаб каждого фото. Позиция — 3×3, размер — сколько ячеек занимает.</string>
+    <string name="share_post_placements_auto">Автоматически</string>
+    <string name="share_post_placement_position">Позиция</string>
+    <string name="share_post_placement_size">Размер</string>
+    <string name="share_post_placement_zoom">Масштаб</string>
+    <string name="share_post_share_chooser">Поделиться постом</string>
+    <string name="share_post_save_format_title">Формат файла</string>
+    <string name="share_post_save_format_png">PNG (изображение)</string>
+    <string name="share_post_save_format_pdf">PDF (документ)</string>
+    <string name="share_post_save_format_html">HTML (веб-страница)</string>
+    <string name="share_post_saved_png">Сохранено как PNG</string>
+    <string name="share_post_saved_pdf">Сохранено как PDF</string>
+    <string name="share_post_saved_html">Сохранено как HTML</string>
+    <string name="share_post_save_error">Не удалось сохранить</string>
+    <string name="share_post_load_error">Не удалось загрузить запись</string>
+    <string name="share_post_action">Создать пост</string>
+    <string name="share_post_crop_title">Кадрирование</string>
+    <string name="share_post_crop_zoom">Масштаб</string>
+    <string name="share_post_crop_x">Смещение по горизонтали</string>
+    <string name="share_post_crop_y">Смещение по вертикали</string>
+    <string name="share_post_crop_reset">Сбросить</string>
+    <string name="share_post_crop_no_photo">Сначала выберите фото</string>
+
+    <string name="next">Далее</string>
+    <string name="create_article_button">Создать статью</string>
+    <string name="create_article_title">Создать статью</string>
+    <string name="create_article_step_photos_counter">Шаг 1 из 2 — фото (%1$d из %2$d)</string>
+    <string name="create_article_step_template">Шаг 2 из 2 — шаблон</string>
+    <string name="create_article_no_photos">В записи нет фото</string>
+    <string name="create_article_pick_template">Выберите шаблон</string>
+    <string name="create_article_template_html_title">Интернет-страница (HTML)</string>
+    <string name="create_article_template_html_desc">Откроется в любом браузере. Заголовок, текст и фото в один столбец.</string>
+    <string name="create_article_template_pdf_title">Документ PDF (A4)</string>
+    <string name="create_article_template_pdf_desc">Готов к печати. Формат A4, книжная ориентация.</string>
+    <string name="create_article_create">Создать</string>
+    <string name="create_article_select_template">Выберите шаблон</string>
+    <string name="create_article_progress">Создание статьи…</string>
+    <string name="create_article_saved">Статья сохранена</string>
+    <string name="create_article_save_error">Не удалось сохранить статью</string>
+
+
+    <string name="create_article_action_title">Что сделать со статьёй?</string>
+    <string name="create_article_action_share">Поделиться</string>
+    <string name="create_article_action_save">Сохранить на устройство</string>
+    <string name="create_article_filename_title">Имя файла</string>
+    <string name="create_article_filename_hint">Введите имя файла</string>
+    <string name="create_article_empty_filename">Имя файла не может быть пустым</string>
+    <string name="create_article_share_chooser">Поделиться статьёй</string>
+
+    <string name="unsaved_changes_title">Несохранённые изменения</string>
+    <string name="unsaved_changes_message">В записи есть несохранённые изменения. Сохранить?</string>
+    <string name="unsaved_changes_discard">Не сохранять</string>
+
+    <string name="builder_no_fields_for_group">Нет полей для группировки</string>
+
+    <string name="onboarding_app_name_hint">Название приложения</string>
+    <string name="onboarding_exit_confirm">Выйти без сохранения настроек?</string>
+
+
+
+</resources>

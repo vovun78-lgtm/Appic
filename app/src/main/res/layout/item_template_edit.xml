@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="?attr/cardBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_drag_handle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="12dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_drag_handle"
+            android:alpha="0.5"
+            app:tint="?attr/textPrimaryColor"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_field_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Название поля"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/textPrimaryColor" />
+
+            <TextView
+                android:id="@+id/tv_field_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Тип: Текст"
+                android:textSize="12sp"
+                android:textColor="?attr/textSecondaryColor" />
+
+            <TextView
+                android:id="@+id/tv_field_required"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Обязательное: Да"
+                android:textSize="12sp"
+                android:textColor="?attr/textSecondaryColor" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_menu_delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@null" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SeekBarPreference">
+        <attr name="minValue" format="integer" />
+        <attr name="maxValue" format="integer" />
+    </declare-styleable>
+
+    <!-- Атрибуты для кастомизации цветов в темах -->
+    <attr name="cardBackground" format="color" />
+    <attr name="dividerColor" format="color" />
+    <attr name="textPrimaryColor" format="color" />
+    <attr name="textSecondaryColor" format="color" />
+    <attr name="popupBackgroundColor" format="color" />
+    <attr name="colorGroupBackground" format="color" />
+    <attr name="inputTextColor" format="color" />
+    <attr name="fabColor" format="color" />
+    <attr name="unreadDotColor" format="color" />
+</resources>
